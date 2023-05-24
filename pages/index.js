@@ -281,7 +281,7 @@ const renderButton = () => {
                                     xs: 2
                                 }
                             }} sm={12} xs={12} md={1} lg={1}>
-                                <ButtonWithLoading loading={claimLoading} onClick={claim} color='success' variant='outlined' children='claim' />
+                                <ButtonWithLoading loading={claimLoading} onClick={claim} color='success' variant='outlined' child='claim' />
                             </Grid>
                         </Grid>}
                         <MintOrClaim loading={loading} buttonTitle='mint' onChange={handleMintAmount} onClick={mint} />                            

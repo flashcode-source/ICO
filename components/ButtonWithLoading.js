@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 
-const ButtonWithLoading = ({loading, onClick, variant, children, className, color}) => {
+const ButtonWithLoading = ({loading, onClick, variant, child, className, color}) => {
     if(loading) {
         return(
             <Button 
@@ -22,13 +22,13 @@ const ButtonWithLoading = ({loading, onClick, variant, children, className, colo
                                 position: 'absolute'
                             }}    
                         />
-                        {children}
+                        please wait
                 </Button>
         )
     } else {
         return(
             <Button color={color || 'primary'} className={className} onClick={onClick} variant={variant} sx={{textTransform: 'none'}}>
-                {children}
+                {child}
             </Button>
         )
     }

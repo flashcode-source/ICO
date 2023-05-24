@@ -23,7 +23,7 @@ const MintOrClaim = ({loading, buttonColor, onClick, buttonTitle, readOnly, onCh
           }
         }}>
             <ButtonWithLoading 
-                children={buttonTitle}
+                child={buttonTitle}
                 loading={loading}
                 variant="contained" 
                 className={styles.btn}
